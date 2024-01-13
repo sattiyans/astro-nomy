@@ -30,8 +30,8 @@ const { title, description, mainClass } = Astro.props;
     /> -->
 
     <!-- if use Navigation Menu on desktop -->
-    <MainNavigationMenu slot="left-header" client:load />
-    <SheetMobileNav
+    <!-- <MainNavigationMenu slot="left-header" client:load /> -->
+    <!-- <SheetMobileNav
       mainNavItems={[...navMenuConfig.links]}
       sidebarNavItems={[
         ...navMenuConfig.infosNav,
@@ -39,16 +39,17 @@ const { title, description, mainClass } = Astro.props;
       ]}
       slot="mobile-nav-header"
       client:load
-    />
+    /> -->
 
-    <nav slot="right-header">
+    <!-- <nav slot="right-header">
       <a
-        href="/login"
+        href="https://dotkod.com"
+        target="_blank"
         class={cn(buttonVariants({ variant: "outline", size: "sm" }), "px-4")}
       >
-        Login
+        Dotkod Solutions >
       </a>
-    </nav>
+    </nav> -->
   </Header>
 
   <main class={cn(mainClass)}>

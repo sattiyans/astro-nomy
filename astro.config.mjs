@@ -7,7 +7,7 @@ import vercel from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-nomy.vercel.app",
+  site: "https://sattiyans.com",
   integrations: [
     mdx({
       syntaxHighlight: 'shiki',
@@ -23,4 +23,8 @@ export default defineConfig({
   adapter: vercel({
     analytics: true,
   }),
+  redirects: {
+    '/talk': 'mailto:hey@sattiyans.com',
+    '/text': 'https://wa.me/60143072966'
+  },
 });
